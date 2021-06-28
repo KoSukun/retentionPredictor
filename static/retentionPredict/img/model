@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="satisfaction <= 0.465\ngini = 0.364\nsamples = 11999\nvalue = [9129, 2870]\nclass = retained", fillcolor="#eda977"] ;
+1 [label="project <= 2.5\ngini = 0.477\nsamples = 3344\nvalue = [1313, 2031]\nclass = left", fillcolor="#b9dcf6"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="evaluation <= 0.575\ngini = 0.224\nsamples = 1404\nvalue = [180, 1224]\nclass = left", fillcolor="#56abe9"] ;
+1 -> 2 ;
+3 [label="gini = 0.111\nsamples = 1293\nvalue = [76, 1217]\nclass = left", fillcolor="#45a3e7"] ;
+2 -> 3 ;
+4 [label="gini = 0.118\nsamples = 111\nvalue = [104, 7]\nclass = retained", fillcolor="#e78946"] ;
+2 -> 4 ;
+5 [label="satisfaction <= 0.115\ngini = 0.486\nsamples = 1940\nvalue = [1133, 807]\nclass = retained", fillcolor="#f8dbc6"] ;
+1 -> 5 ;
+6 [label="gini = 0.0\nsamples = 710\nvalue = [0, 710]\nclass = left", fillcolor="#399de5"] ;
+5 -> 6 ;
+7 [label="gini = 0.145\nsamples = 1230\nvalue = [1133, 97]\nclass = retained", fillcolor="#e78c4a"] ;
+5 -> 7 ;
+8 [label="years <= 4.5\ngini = 0.175\nsamples = 8655\nvalue = [7816, 839]\nclass = retained", fillcolor="#e88f4e"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="hours <= 290.5\ngini = 0.03\nsamples = 7076\nvalue = [6970, 106]\nclass = retained", fillcolor="#e5833c"] ;
+8 -> 9 ;
+10 [label="gini = 0.028\nsamples = 7069\nvalue = [6970, 99]\nclass = retained", fillcolor="#e5833c"] ;
+9 -> 10 ;
+11 [label="gini = 0.0\nsamples = 7\nvalue = [0, 7]\nclass = left", fillcolor="#399de5"] ;
+9 -> 11 ;
+12 [label="evaluation <= 0.815\ngini = 0.497\nsamples = 1579\nvalue = [846, 733]\nclass = retained", fillcolor="#fceee5"] ;
+8 -> 12 ;
+13 [label="gini = 0.091\nsamples = 609\nvalue = [580, 29]\nclass = retained", fillcolor="#e68743"] ;
+12 -> 13 ;
+14 [label="gini = 0.398\nsamples = 970\nvalue = [266, 704]\nclass = left", fillcolor="#84c2ef"] ;
+12 -> 14 ;
+}

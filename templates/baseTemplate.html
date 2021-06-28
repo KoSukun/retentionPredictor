@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <title>RD {% block title %}{% endblock %}</title>
+</head>
+<body>
+<div class="container">
+    <!--시멘틱태그라는, html상에서 위치를 위한 태그들 header 등-->
+    <header class="header clearfix">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="/">Retention Decision</a>
+            <ul class="nav">
+                <li class="nav-item"><a href="/" class="active nav-link ">Home</a></li>
+                <li class="nav-item">
+                    <a href="/sw/selectAll" class="nav-link ">About Data</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/minjae/" class="nav-link ">Explore Data</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/hyelyeon/analysis" class="nav-link ">Data Analysis</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/retentionPredict/" class="nav-link">Retention Predict</a>
+                </li>
+<!--                {% if user.is_authenticated %}-->
+<!--                <li class="nav-item"><a href="#" class="nav-link">Welcome, {{user.get_username}}</a></li>-->
+                <li>
+                </li>
+                {% else %}
+                <li>
+                </li>
+<!--                {% endif %}-->
+            </ul>
+        </nav>
+    </header>
+    {% block content %}
+    {% endblock %}
+    <footer class="footer">
+        <p>&copy; Retention Decision 2019</p>
+    </footer>
+</div>
+
+
+</body>
+</html>
