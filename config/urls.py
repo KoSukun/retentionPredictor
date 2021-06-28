@@ -18,12 +18,12 @@ from django.urls import path, include
 
 # import retentionPredict.urls
 # import sw.urls
-# import main.views
+import main.views
 # import minjae.urls
 # import hyelyeon.urls
 
 urlpatterns = [
-    # path('', main.views.Index.as_view(), name="index"),
+    path('', main.views.Index.as_view(), name="index"),
     # path('admin/', admin.site.urls),
     # path('retentionPredict/', include(retentionPredict.urls), name="retentionPredict"),
     # path('sw/', include(sw.urls), name="sw"),
